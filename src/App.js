@@ -13,7 +13,6 @@ function App() {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setCurrentUser(user);
-      console.log(user);
     });
 
     // Cleanup listener when component unmounts

@@ -43,8 +43,12 @@ const SignIn = () => {
           required
         />
         <label></label>
-        <CustomButton type="submit">Sign in</CustomButton>
-        <CustomButton onClick={signInWithGoogle} >Sign in with google</CustomButton>
+        <div className="buttons">
+          <CustomButton type="submit">Sign in</CustomButton>
+          <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+            Google
+          </CustomButton>
+        </div>
       </form>
     </div>
   );
